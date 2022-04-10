@@ -1,5 +1,6 @@
 package com.example.jogoforca05kotlin
 
+import android.content.Intent
 import android.content.res.Resources
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
@@ -54,6 +55,7 @@ class MainActivity : AppCompatActivity() {
             var penalidade: String
             var res: Resources
             var resID : Number
+            var intent: Intent
 
             letra = this@MainActivity.etLetra.text.toString()
 
@@ -80,6 +82,16 @@ class MainActivity : AppCompatActivity() {
                 this@MainActivity.tvLayout.text = this@MainActivity.jogo.getPalavra().toList().toString().replace("[", "").replace("]", "").replace(",", " ")
                 this@MainActivity.tvResultado.text = this@MainActivity.jogo.getResultado()
                 this@MainActivity.btJogar.isEnabled = false
+
+                if (jogo.getResultado().uppercase().contains("GANHOU")) {
+                    intent = Intent(this@MainActivity, GanhouActivity::class.java)
+                } else {
+                    intent = Intent(this@MainActivity, PerdeuActivity::class.java)
+                }
+                if (intent.resolveActivity(packageManager) != null ){
+                    startActivity(intent)
+                }
+
             }
 
             this@MainActivity.etLetra.getText().clear()

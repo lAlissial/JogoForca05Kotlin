@@ -8,8 +8,8 @@
 
     <ImageView
         android:id="@+id/ivDeath"
-        android:layout_width="274dp"
-        android:layout_height="543dp"
+        android:layout_width="287dp"
+        android:layout_height="559dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.496"

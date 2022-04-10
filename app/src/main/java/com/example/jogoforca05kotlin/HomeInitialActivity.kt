@@ -1,5 +1,6 @@
 package com.example.jogoforca05kotlin
 
+import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.widget.Button
@@ -19,5 +20,15 @@ class HomeInitialActivity : AppCompatActivity() {
         this.btStart = findViewById(R.id.btStart)
         this.ivHangmansNoose = findViewById(R.id.ivHangmansNoose)
 
+        this.btStart.setOnClickListener {
+            val intent = Intent(this, MainActivity::class.java)
+
+            if (intent.resolveActivity(packageManager) != null ){
+                startActivity(intent)
+            }
+        }
+
     }
+
+
 }
