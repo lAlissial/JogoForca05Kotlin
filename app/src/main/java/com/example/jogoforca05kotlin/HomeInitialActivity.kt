@@ -11,8 +11,6 @@ class HomeInitialActivity : AppCompatActivity() {
     private lateinit var ivHangmansNoose: ImageView
 
 
-
-
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_home_initial2)
