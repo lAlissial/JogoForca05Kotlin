@@ -10,12 +10,14 @@
 
     <ImageView
         android:id="@+id/ivHangmansNoose"
-        android:layout_width="470dp"
-        android:layout_height="683dp"
-        android:layout_marginBottom="160dp"
+        android:layout_width="320dp"
+        android:layout_height="617dp"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:srcCompat="@drawable/imagemno"
-        tools:layout_editor_absoluteX="-30dp" />
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0"
+        app:srcCompat="@drawable/imagemno" />
 
     <Button
         android:id="@+id/btStart"
@@ -27,10 +29,9 @@
         android:textStyle="bold"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.498"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.901" />
+        app:layout_constraintVertical_bias="0.892" />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>
