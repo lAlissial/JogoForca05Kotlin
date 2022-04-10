@@ -20,13 +20,12 @@ class PerdeuActivity : AppCompatActivity() {
         this.ivDeath = findViewById(R.id.ivDeath)
         this.btTryNovamente = findViewById(R.id.btTryNovamente)
 
-        this.btTryNovamente.setOnClickListener { TentarJogarNovamente() }
-    }
-
-    fun TentarJogarNovamente(){
-        val intent = Intent(this, HomeInitialActivity::class.java)
-        if (intent.resolveActivity(packageManager) != null ){
-            startActivity(intent)
+        this.btTryNovamente.setOnClickListener {
+            val intent = Intent(this, HomeInitialActivity::class.java)
+            if (intent.resolveActivity(packageManager) != null ){
+                startActivity(intent)
+            }
         }
     }
+
 }

@@ -27,15 +27,14 @@ class GanhouActivity : AppCompatActivity() {
         this.btTentarAgain = findViewById(R.id.btTentarAgain)
 
 
-        this.btTentarAgain.setOnClickListener { TryAgain() }
-    }
-
-    fun TryAgain(){
-        val intent = Intent(this, HomeInitialActivity::class.java)
-        if (intent.resolveActivity(packageManager) != null ){
-            startActivity(intent)
+        this.btTentarAgain.setOnClickListener {
+            intent = Intent(this, HomeInitialActivity::class.java)
+            if (intent.resolveActivity(packageManager) != null ){
+                startActivity(intent)
+            }
         }
     }
+
 
 
 
