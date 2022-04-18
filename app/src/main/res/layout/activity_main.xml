@@ -50,6 +50,7 @@
         android:layout_width="86dp"
         android:layout_height="39dp"
         android:layout_marginStart="12dp"
+        android:fontFamily="@font/vt323"
         android:text="Jogar"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
