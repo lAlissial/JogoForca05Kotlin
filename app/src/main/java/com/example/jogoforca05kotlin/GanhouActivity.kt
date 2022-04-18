@@ -28,7 +28,7 @@ class GanhouActivity : AppCompatActivity() {
 
 
         this.btTentarAgain.setOnClickListener {
-            intent = Intent(this, HomeInitialActivity::class.java)
+            intent = Intent(this, MainActivity::class.java)
             if (intent.resolveActivity(packageManager) != null ){
                 startActivity(intent)
             }

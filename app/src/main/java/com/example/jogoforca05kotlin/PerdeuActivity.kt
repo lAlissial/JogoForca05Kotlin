@@ -21,7 +21,7 @@ class PerdeuActivity : AppCompatActivity() {
         this.btTryNovamente = findViewById(R.id.btTryNovamente)
 
         this.btTryNovamente.setOnClickListener {
-            val intent = Intent(this, HomeInitialActivity::class.java)
+            val intent = Intent(this, MainActivity::class.java)
             if (intent.resolveActivity(packageManager) != null ){
                 startActivity(intent)
             }
